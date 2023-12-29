@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+Netflix Clone using MERN Stack
+Overview
+This Netflix clone is developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It involves data extraction from the TMDB API and storing it in MongoDB. The frontend interacts with the backend through Express and Node.js, making API calls to retrieve movie and TV show data.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Data Extraction
+The data extraction process is handled by the dataExtraction.js file in the Extraction code folder. This script pulls data from the TMDB API and stores it in MongoDB.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Frontend Features
+Home Page: Displays different popular, top-rated movies, and TV shows.
+Movies Filter: Shows only movies.
+TV Shows Filter: Shows only TV shows.
+Backend Features
+Endpoints:
+/api/movies: Retrieves all movie data.
+/api/tvshows: Retrieves all TV shows.
+/api/addMovie/userId/movieId: Adds a movie to the user's favorite list.
+/api/removeMovie/userId/movieId: Removes a movie from the user's favorite list.
+/api/addTvshows/userId/tvshowsId: Adds a TV show to the user's favorite list.
+/api/removeTvshows/userId/tvshowsId: Removes a TV show from the user's favorite list.
+User Authentication:
+Signup and Login: Implemented with password hashing and JWT.
+Verified Users Only: Only verified users are allowed to add and remove movies and TV shows.
+Project Structure
+Extraction Code Folder: Contains dataExtraction.js for TMDB API data extraction.
+Frontend: Implements the Netflix UI with React.
+Backend: Utilizes Express and Node.js for server-side logic.
+Database: MongoDB is used to store user and movie/TV show data.
+How to Run
+Clone the repository.
+Run the frontend and backend separately.
+Ensure MongoDB is set up and connected.
+Use the provided API endpoints to interact with the application.
+Additional Considerations
+JWT Token: Used for user authentication.
+User Authorization: Only verified users can add and remove movies and TV shows.
