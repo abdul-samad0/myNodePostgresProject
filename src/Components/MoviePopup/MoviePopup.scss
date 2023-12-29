@@ -1,0 +1,67 @@
+$bg:rgb(39, 39, 39);
+.movie-popup {
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    right: 10%;
+    width: 50%; 
+    /* background: rgba(93, 93, 93, 0.8); */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    z-index: 10;
+  
+    .popup-content {
+      background: $bg;
+      padding: 20px;
+      z-index: 13;
+      border-radius: 15px;
+      
+  
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+      
+      }
+  
+      p {
+        margin-top: 10px;
+        color:white;
+      }
+    }
+  
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      color: rgb(235, 235, 235);
+    }
+  }
+  
+  @media(max-width: 768px){
+    .movie-popup {
+        position: fixed;
+        top: 16%;
+        left: 19%;
+        width: 60%;
+        height: 40%;
+   
+        z-index: 10;
+      }
+
+  }
+
+  @media(max-width:496px){
+    .movie-popup {
+        position: fixed;
+    top: 16%;
+    left: 14%;
+    width: 75%;
+        z-index: 10;
+      }
+  }

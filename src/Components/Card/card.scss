@@ -1,0 +1,10 @@
+.card {
+    width: 95%;
+    cursor: pointer;
+    transition: transform 0.5s;
+  
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+  

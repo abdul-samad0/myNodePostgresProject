@@ -1,0 +1,29 @@
+$bg: rgb(16, 16, 16);
+.row {
+    background-color: $bg;
+    padding: 0.5rem;
+  
+  
+    >h2 {
+      color: white;
+      margin: 0.3rem;
+      font-weight: 400;
+    }
+  
+    .img-row {
+      display: flex;
+      overflow-x: hidden;
+    }
+  }
+
+  .react-multiple-carousel__arrow {
+    background: transparent !important;
+  }
+  
+  .react-multiple-carousel__arrow::before {
+    font-size: 30px !important
+  }
+  
+  .react-multiple-carousel__arrow:hover {
+    background-color: rgba(0, 0, 0, 0.163) !important;
+  }

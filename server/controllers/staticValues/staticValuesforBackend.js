@@ -1,0 +1,1 @@
+module.exports.allowedTypes=["Airing Today", "Popular", "Top Rated", "On The Air", "Upcoming", "Now Playing"];
