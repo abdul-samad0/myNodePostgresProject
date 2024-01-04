@@ -7,8 +7,8 @@ const moviesRoute=express.Router();
 
 moviesRoute.get('/movies', moviesController );
 moviesRoute.get('/movies/bygenre', moviesGenreController);
-moviesRoute.post('/addMovie/:userId/:movieId', authenticate, addMoviesController);
-moviesRoute.post('/removeMovie/:userId/:movieId', authenticate, removeMoviesController);
+moviesRoute.put('/addMovie/:userId/:movieId', authenticate, addMoviesController);
+moviesRoute.put('/removeMovie/:userId/:movieId', authenticate, removeMoviesController);
 
 module.exports={
 moviesRoute
