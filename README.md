@@ -1,12 +1,12 @@
-# Netflix Clone using MERN Stack
+# Netflix Clone using MERN Stack with PostgreSQL Integration
 
 ## Overview
 
-This Netflix clone is developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It involves data extraction from the TMDB API and storing it in MongoDB. The frontend interacts with the backend through Express and Node.js, making API calls to retrieve movie and TV show data.
+This Netflix clone is developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It now features integration with PostgreSQL, replacing MongoDB for data storage. The backend, frontend, and data extraction process have been updated to accommodate the switch to PostgreSQL.
 
 ## Data Extraction
 
-The data extraction process is handled by the `dataExtraction.js` file in the Extraction code folder. This script pulls data from the TMDB API and stores it in MongoDB.
+The data extraction process is handled by the `dataExtraction.js` file in the Extraction code folder. This script pulls data from the TMDB API and stores it in PostgreSQL.
 
 ## Frontend Features
 
@@ -34,19 +34,17 @@ The data extraction process is handled by the `dataExtraction.js` file in the Ex
 
 - **Extraction Code Folder**: Contains `dataExtraction.js` for TMDB API data extraction.
 - **Frontend**: Implements the Netflix UI with React.
-- **Backend**: Utilizes Express and Node.js for server-side logic.
-- **Database**: MongoDB is used to store user and movie/TV show data.
+- **Backend**: Utilizes Express and Node.js for server-side logic with PostgreSQL integration.
+- **Database**: PostgreSQL is used to store user and movie/TV show data.
 
 ## How to Run
 
 1. Clone the repository.
 2. Run the frontend and backend separately.
-3. Ensure MongoDB is set up and connected.
+3. Ensure PostgreSQL is set up and connected.
 4. Use the provided API endpoints to interact with the application.
 
 ## Additional Considerations
 
 - **JWT Token**: Used for user authentication.
 - **User Authorization**: Only verified users can add and remove movies and TV shows.
-
-
